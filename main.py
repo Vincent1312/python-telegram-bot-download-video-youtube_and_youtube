@@ -23,7 +23,7 @@ headers = {
 def dl_facebook(link_fb,user_id):
 	print("aaaaaaa")
 	global link_download
-	url_res = 'https://x2download.com/api/ajaxSearch'
+	url_res = 'https://x2download.app/api/ajaxSearch'
 	data = {'q':f'{link_fb}','vt': 'home'}
 	res = requests.post(url_res,headers=headers,data=data)
 	try:
