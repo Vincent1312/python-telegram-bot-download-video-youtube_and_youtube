@@ -75,14 +75,14 @@ def getlink_youtube(vid,title,token,timeExpires,user_id):
 		data = {
 	  'v_id': f'{vid}',
 	  'ftype': 'mp4',
-	  'fquality': f'{i}',
-# 	  'fname': f'{title}',
+	  'fquality': f'{chatluong}',
+	  'fname': f'{title}',
 	  'token': f'{token}',
 	  'timeExpire': f'{timeExpires}',
-	'client': 'X2Download.app'
+	  # 'client': 'X2Download.app'
 		}
 		try:
-			response = requests.post('https://dd107.opoaidazzc.xyz/api/json/convert', headers=headers, data=data)
+			response = requests.post('https://dv243.video-sv2.xyz/api/json/convert', headers=headers, data=data)
 			datajson = response.json()
 			result = datajson['result']
 			statusCode = datajson['statusCode']
